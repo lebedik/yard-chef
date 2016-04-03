@@ -1,3 +1,9 @@
+# install required OS packages
+%w{git gcc}.each do |pkg|
+  package pkg do
+    action :install
+  end
+end
 
 #git "#{node['yard_chef']['source_dir']}/yard" do
 #  repository node['yard_chef']['yard']['git_repository']
