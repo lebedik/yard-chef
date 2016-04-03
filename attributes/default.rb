@@ -18,7 +18,7 @@ default['yard_chef']['yard_chef']['git_revision'] = "v1.0.0"
 default['yard_chef']['yard_chef']['source_file'] = node['yard_chef']['source_dir'] + "/yard-chef/yard-chef-1.0.0.gem"
 
 # Location to Chef repository for creating documentation
-default['yard_chef']['yard_chef']['chef_repo_location'] = "/tmp/vagrant-chef/"
+default['yard_chef']['yard_chef']['chef_repo_location'] = "/var/chef/cache/cookbooks/"
 # The output directory for documentation
 default['yard_chef']['yard_chef']['document_root'] = "/usr/local/etc/yard" 
 
