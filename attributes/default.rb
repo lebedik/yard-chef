@@ -18,7 +18,7 @@ default['yard_chef']['yard_chef']['git_revision'] = "v1.0.0"
 default['yard_chef']['yard_chef']['source_file'] = node['yard_chef']['source_dir'] + "/yard-chef/yard-chef-1.0.0.gem"
 
 # Location to Chef repository for creating documentation
-default['yard_chef']['yard_chef']['chef_repo_location'] = "/var/lib/monsoon/repos/" + node['monsoon']['instances'][node['hostname']]['tags']['moo:organization'] + "/" + node['monsoon']['instances'][node['hostname']]['tags']['moo:project'] + "/chef/"
+default['yard_chef']['yard_chef']['chef_repo_location'] = "/tmp/vagrant-chef/"
 # The output directory for documentation
 default['yard_chef']['yard_chef']['document_root'] = "/usr/local/etc/yard" 
 
